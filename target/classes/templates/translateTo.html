@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Choose Target Language</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Choose what language to translate to:</h1>
+
+<form action="#" th:action="@{/translateTo}" th:object="${translationInfo}" method="post">
+    <h4 th:text="*{languageToOptions}"></h4>
+
+    <p>Id: <input type="text" th:field="*{languageTo}" /></p>
+    <!--<p>Message: <input type="text" th:field="*{content}" /></p>-->
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+
+</form>
+<h4><font color = "red">NOTE: If you enter something other than an integer shown above you will be redirected to an error screen!</font> </h4>
+
+</body>
+</html>

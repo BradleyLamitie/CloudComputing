@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: gs-handling-form-submission.jar
+Main-Class: application.SpeechToSpeechTranslatorApp
+
